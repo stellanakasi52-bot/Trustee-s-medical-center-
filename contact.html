@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trustees Medical Center | Home</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <h2 class="logo">Trustees Medical Center</h2>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Your Health, Our Priority</h1>
+        <p>Quality healthcare services delivered with compassion and professionalism.</p>
+        </div>
+</section>
+<section class="content-section">
+    <h1>Contact Us</h1>
+    <form class="contact-form">
+        <input type="text" placeholder="Your Name" required><br><br>
+        <input type="email" placeholder="Email Address" required><br><br>
+        <textarea placeholder="Your Message" required></textarea><br><br>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+</section>
+<section class="content-section">
+    <h1>Book an Appointment</h1>
+
+    <form id="appointmentForm" class="appointment-form">
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="text" id="phone" placeholder="Phone Number" required>
+        
+        <select id="department" required>
+            <option value="">Select Department</option>
+            <option>General Consultation</option>
+            <option>Pediatrics</option>
+            <option>Dental Care</option>
+            <option>Laboratory</option>
+            <option>Maternity</option>
+        </select>
+
+        <select id="doctor" required>
+            <option value="">Select Doctor</option>
+            <option>Dr. Stuart.</option>
+            <option>Dr. stella K.</option>
+        </select>
+
+        <input type="date" id="date" required>
+        <input type="time" id="time" required>
+
+        <button type="submit" class="btn">Submit Appointment</button>
+    </form>
+
+    <p id="successMessage" class="success-message"></p>
+</section>
+
+<footer>
+    <p>© 2025 Trustees Medical Center. All Rights Reserved.</p>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
+        
